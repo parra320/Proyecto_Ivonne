@@ -1,0 +1,170 @@
+:root {
+  --rojo: #e50914;
+  --fondo: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--fondo);
+  font-family: "Open Sans", sans-serif;
+}
+
+.contenedor {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+header {
+  padding: 30px 0;
+}
+
+header .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logotipo {
+  font-family: "Bebas Neue", cursive;
+  font-weight: normal;
+  color: var(--rojo);
+  font-size: 40px;
+}
+
+header nav a {
+  color: #aaa;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+  color: #fff;
+}
+
+/* ---- ----- ----- Pelicula Principal ----- ----- ----- */
+.pelicula-principal {
+  font-size: 16px;
+  min-height: 40.62em;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+    url("https://www.youtube.com/embed/F4Ygcigj0Gk?controls=0");
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 3.12em;
+  display: flex;
+  align-items: end;
+}
+
+.pelicula-principal .contenedor {
+  margin: 0 auto;
+  margin-bottom: 6.25em;
+}
+
+.pelicula-principal .titulo {
+  font-weight: 600;
+  font-size: 3.6em;
+  margin-bottom: 0.4em;
+  color: rgba(255, 0, 0, 0.8);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.pelicula-principal .descripcion {
+  font-weight: normal;
+  font-size: 1.2em;
+  line-height: 1.75em;
+  max-width: 50%;
+  margin-bottom: 1.25em;
+}
+
+.pelicula-principal .botonR {
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 0.4em;
+  padding: 0.7em 1.5em;
+  color: #000;
+  margin-right: 1.25em;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  font-size: 1.12em;
+}
+
+.pelicula-principal .botonR:hover {
+  background: rgba(200, 200, 200, 0.8);
+  color: #000;
+}
+
+.pelicula-principal .botonI {
+  background: rgba(0, 0, 0, 0.8);
+  border: none;
+  border-radius: 0.4em;
+  padding: 0.7em 1.4em;
+  color: #fff;
+  margin-right: 1.25em;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  font-size: 1.12em;
+}
+
+.pelicula-principal .botonI:hover {
+  background: rgba(55, 55, 55, 0.8);
+  color: #fff;
+}
+
+.pelicula-principal .boton i {
+  margin-right: 1.25em;
+}
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+  header .logotipo {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  header .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pelicula-principal {
+    font-size: 14px;
+  }
+
+  .pelicula-principal .descripcion {
+    max-width: 100%;
+    color: rgba(114, 112, 112, 0.8);
+  }
+}
+
+#Destacadas {
+  min-width: 100vh;
+  position: relative;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1c1c1d;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+}
