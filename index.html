@@ -18,16 +18,19 @@
 
     <title>Hungry Mockingjay</title>
   </head>
+
   <body>
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light sticky-top">
       <div class="container-fluid">
         <div id="navbar" class="navbar-nav">
-          <a id="enlaces" class="navbar-brand" href="#"
+          <a id="enlaces" class="navbar-brand" href="#contenedor"
             ><img src="assets/logo.png" />Hungry Mockingjay</a
           >
-          <a id="enlaces" class="navbar-brand" href="#">Menú de comida</a>
-          <a id="enlaces" class="navbar-brand" href="#">Promociones</a>
-          <a id="enlaces" class="navbar-brand" href="#">Galeria</a>
+          <a id="enlaces" class="navbar-brand" href="#platillos"
+            >Platillos Principales</a
+          >
+          <a id="enlaces" class="navbar-brand" href="#Bebidas">Bebidas</a>
+          <a id="enlaces" class="navbar-brand" href="#Postres">Postres</a>
         </div>
       </div>
     </nav>
@@ -116,8 +119,9 @@
             </button>
           </div>
         </div>
+        <div id="contenedormid"></div>
         <div id="contenedor2">
-          <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-top: 10%">
             <div class="col">
               <div class="card">
                 <img src="assets/alitas.jpg" class="card-img-top" />
@@ -133,7 +137,7 @@
             </div>
             <div class="col">
               <div class="card">
-                <img src="..." class="card-img-top" />
+                <img src="assets/Mojito.jpg" class="card-img-top" />
                 <div class="card-body">
                   <h5 class="card-title">Bebidas</h5>
                   <p class="card-text">
@@ -146,7 +150,7 @@
             </div>
             <div class="col">
               <div class="card">
-                <img src="..." class="card-img-top" />
+                <img src="assets/chessecake.jpeg" class="card-img-top" />
                 <div class="card-body">
                   <h5 class="card-title">Postres</h5>
                   <p class="card-text">
@@ -159,7 +163,11 @@
           </div>
         </div>
       </section>
-      <center><h1 style="padding: 40px">Platillos Principales</h1></center>
+      <center>
+        <h1 id="platillos" style="padding: 40px; color: white">
+          Platillos Principales
+        </h1>
+      </center>
       <div>
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
@@ -225,7 +233,7 @@
               </div>
             </div>
           </div>
-          <div class="col" id="background">
+          <div class="col">
             <div class="card h-100" id="background">
               <img src="assets/alitas.jpg" class="card-img-top" />
               <div class="card-body">
@@ -240,12 +248,14 @@
           </div>
         </div>
       </div>
-      <center><h1 style="padding: 40px">Bebidas</h1></center>
+      <center>
+        <h1 id="Bebidas" style="padding: 40px; color: white">Bebidas</h1>
+      </center>
       <div>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
           <div class="col">
             <div class="card h-100" id="background">
-              <img src="assets/hot-dog.jpg" class="card-img-top" />
+              <img src="assets/jarritos.jpg" class="card-img-top" />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -258,7 +268,7 @@
           </div>
           <div class="col">
             <div class="card h-100" id="background">
-              <img src="assets/pizza-con-queso.jpg" class="card-img-top" />
+              <img src="assets/cocas.jpg" class="card-img-top" />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a short card.</p>
@@ -267,7 +277,7 @@
           </div>
           <div class="col">
             <div class="card h-100" id="background">
-              <img src="assets/tacos.jpg" class="card-img-top" />
+              <img src="assets/Mojito.jpg" class="card-img-top" />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -279,36 +289,7 @@
           </div>
           <div class="col">
             <div class="card h-100" id="background">
-              <img src="assets/two-tortillas-scaled.jpg" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100" id="background">
-              <img
-                src="assets/hamburguesa-papel-pintado-2560x1440_51.jpg"
-                class="card-img-top"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col" id="background">
-            <div class="card h-100" id="background">
-              <img src="assets/alitas.jpg" class="card-img-top" />
+              <img src="assets/beer.jpg" class="card-img-top" />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -321,12 +302,14 @@
           </div>
         </div>
       </div>
-      <center><h1 style="padding: 40px">Postres</h1></center>
+      <center>
+        <h1 id="Postres" style="padding: 40px; color: white">Postres</h1>
+      </center>
       <div>
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100" id="background">
-              <img src="assets/hot-dog.jpg" class="card-img-top" />
+              <img src="assets/helado.jpeg" class="card-img-top" />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -339,7 +322,7 @@
           </div>
           <div class="col">
             <div class="card h-100" id="background">
-              <img src="assets/pizza-con-queso.jpg" class="card-img-top" />
+              <img src="assets/churros.jpeg" class="card-img-top" />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a short card.</p>
@@ -348,7 +331,7 @@
           </div>
           <div class="col">
             <div class="card h-100" id="background">
-              <img src="assets/tacos.jpg" class="card-img-top" />
+              <img src="assets/chessecake.jpeg" class="card-img-top" />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -360,7 +343,7 @@
           </div>
           <div class="col">
             <div class="card h-100" id="background">
-              <img src="assets/two-tortillas-scaled.jpg" class="card-img-top" />
+              <img src="assets/buñuelos.jpg" class="card-img-top" />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -373,10 +356,7 @@
           </div>
           <div class="col">
             <div class="card h-100" id="background">
-              <img
-                src="assets/hamburguesa-papel-pintado-2560x1440_51.jpg"
-                class="card-img-top"
-              />
+              <img src="assets/chococake.jpeg" class="card-img-top" />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -387,9 +367,9 @@
               </div>
             </div>
           </div>
-          <div class="col" id="background">
+          <div class="col">
             <div class="card h-100" id="background">
-              <img src="assets/alitas.jpg" class="card-img-top" />
+              <img src="assets/flan.jpeg" class="card-img-top" />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -402,6 +382,37 @@
           </div>
         </div>
       </div>
+
+      <!--Pie de Pagina-->
+      <footer id="Pie_de_pagina">
+        <div id="Primersec">
+          <h1 style="color: white">Siguenos en:</h1>
+          <div id="iconos">
+            <a
+              id="icono"
+              href="https://www.facebook.com/ivonne.canomendoza"
+              style="font-size: 45px"
+              class="fab fa-facebook-square"
+              target="blank"
+            ></a>
+            <a
+              id="icono"
+              href="https://www.instagram.com/ufas_ktrufas/?hl=es"
+              style="font-size: 45px"
+              class="fab fa-instagram"
+              target="blank"
+            ></a>
+          </div>
+        </div>
+        <div id="Segundasec">
+          <center>
+            <small style="color: white"
+              >&copy; 2021 <b>Cano Mendoza Ivonne</b> - Todos los Derechos
+              Reservados.</small
+            >
+          </center>
+        </div>
+      </footer>
     </main>
 
     <!-- Optional JavaScript; choose one of the two! -->

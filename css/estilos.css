@@ -19,24 +19,28 @@ section#contenedor {
   display: flex;
   flex-direction: row;
   width: 100vw;
-  height: 55vh;
-  /*border: solid 2px black;*/
+  height: 50vh;
+  /*border: solid 2px white;*/
 }
 
 main#contenedor {
   display: flex;
   flex-direction: column;
-  background-image: url("/assets/wood_pattern_@2X.png");
+  background-image: url("/assets/fondo1.jpeg");
 }
 
 div#contenedor1 {
-  width: 50%;
+  width: 45%;
   height: 100%;
-  background-color: aquamarine;
+}
+
+div#contenedormid {
+  width: 5%;
+  height: 100%;
 }
 
 div#contenedor2 {
-  width: 50%;
+  width: 45%;
   height: 100%;
 }
 
@@ -47,4 +51,29 @@ div#background {
     rgb(224, 154, 60),
     rgb(235, 189, 65)
   );
+}
+
+/*:::::Pie de Pagina*/
+a#icono {
+  padding: 0px 30px 0px 0px;
+}
+
+footer#Pie_de_pagina {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(3, 4, 61);
+  height: 200px;
+}
+
+div#Primersec {
+  margin: auto;
+}
+
+div#Segundasec {
+  background-color: rgb(0, 1, 39);
+}
+
+div#iconos {
+  display: flex;
+  flex-direction: row;
 }
