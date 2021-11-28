@@ -67,6 +67,8 @@ footer#Pie_de_pagina {
 
 div#Primersec {
   margin: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 div#Segundasec {
@@ -76,4 +78,17 @@ div#Segundasec {
 div#iconos {
   display: flex;
   flex-direction: row;
+}
+
+h1.secciones {
+  width: 100%;
+  padding: 20px;
+  background: #ccc;
+  background: linear-gradient(
+    rgb(159, 36, 30),
+    rgb(187, 62, 34),
+    rgb(224, 154, 60),
+    rgb(235, 189, 65),
+    rgb(231, 202, 75)
+  );
 }
