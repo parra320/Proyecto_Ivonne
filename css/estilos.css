@@ -5,7 +5,14 @@ a#enlaces {
 }
 
 nav#navbar {
-  background-color: rgb(253, 81, 51);
+  background: #ccc;
+  background: linear-gradient(
+    rgb(159, 36, 30),
+    rgb(187, 62, 34),
+    rgb(224, 154, 60),
+    rgb(235, 189, 65),
+    rgb(231, 202, 75)
+  );
 }
 
 section#contenedor {
@@ -14,6 +21,12 @@ section#contenedor {
   width: 100vw;
   height: 55vh;
   /*border: solid 2px black;*/
+}
+
+main#contenedor {
+  display: flex;
+  flex-direction: column;
+  background-image: url("/assets/wood_pattern_@2X.png");
 }
 
 div#contenedor1 {
@@ -25,5 +38,13 @@ div#contenedor1 {
 div#contenedor2 {
   width: 50%;
   height: 100%;
-  background-color: rgb(29, 27, 177);
+}
+
+div#background {
+  background: #ccc;
+  background: linear-gradient(
+    rgb(187, 62, 34),
+    rgb(224, 154, 60),
+    rgb(235, 189, 65)
+  );
 }
