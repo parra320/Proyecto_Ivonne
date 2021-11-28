@@ -26,7 +26,7 @@ section#contenedor {
 main#contenedor {
   display: flex;
   flex-direction: column;
-  background-image: url("/assets/fondo1.jpeg");
+  background-image: url("/assets/fondo1.png");
 }
 
 div#contenedor1 {
