@@ -1,47 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Estilos.css -->
-    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
-    <!-- Font-awesome -->
-    <link href="fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet" />
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
 
-    <title>Hungry Mockingjay</title>
-  </head>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Estilos.css -->
+  <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+  <!-- Font-awesome -->
+  <link href="fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="assets/sinsajo1.png">
 
-  <body>
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light sticky-top">
-      <div class="container-fluid">
-        <div id="navbar" class="navbar-nav">
-          <a id="enlaces" class="navbar-brand" href="#contenedor"
-            ><img src="assets/logo.png" />Hungry Mockingjay</a
-          >
-          <a id="enlaces" class="navbar-brand" href="#platillos"
-            >Platillos Principales</a
-          >
-          <a id="enlaces" class="navbar-brand" href="#Bebidas">Bebidas</a>
-          <a id="enlaces" class="navbar-brand" href="#Postres">Postres</a>
-        </div>
+  <title>Hungry Mockingjay</title>
+</head>
+
+<body>
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container-fluid">
+      <div id="navbar" class="navbar-nav">
+        <a id="enlaces" class="navbar-brand" href="#contenedor"><img src="assets/logo.png" />Hungry Mockingjay</a>
+        <a id="enlaces" class="navbar-brand" href="#platillos">Platillos Principales</a>
+        <a id="enlaces" class="navbar-brand" href="#Bebidas">Bebidas</a>
+        <a id="enlaces" class="navbar-brand" href="#Postres">Postres</a>
+        <a id="enlaces" class="navbar-brand" href="#Promociones">Promociones</a>
+        <a id="enlaces" class="navbar-brand" href="#Galeria">Galería</a>
       </div>
-    </nav>
-    <main id="contenedor">
-      <section id="contenedor">
-        <div id="contenedor1">
+    </div>
+  </nav>
+  <main id="contenedor">
+    <section id="contenedor">
+        <div class="row row-cols-1 row-cols-md-3 g-4" style="margin: 10px 30px 0px 30px">
+          <div class="col">
+            <div class="card">
+              <img src="assets/alitas.jpg" class="card-img-top" />
+              <div id="background" class="card-body">
+                <h5 class="card-title">Platillos Principales</h5>
+                <p class="card-text">
+                  Platillos fuertes de entrada de los que podras degustar y
+                  disfrutar al máximo de su sabor ya que en este restaurante
+                  contamos con los mejores cheff de comida rapida de todo el
+                  país, tu paladar te lo va a agradecer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/Mojito.jpg" class="card-img-top" />
+              <div id="background" class="card-body">
+                <h5 class="card-title">Bebidas</h5>
+                <p class="card-text">
+                  Nuestras bebidas cuentan con los mejores precios de
+                  cualquier restaurante, incluimos bebidas alcoholicas para
+                  +18 y deliciosas bebidas para menores de edad, en Hungry
+                  Mockingjay nos adaptamos a ti y a tu familia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/chessecake.jpeg" class="card-img-top" />
+              <div id="background" class="card-body">
+                <h5 class="card-title">Postres</h5>
+                <p class="card-text">
+                  Contamos con los mejores postres para todo tipo de gustos de
+                  los cuales podras disfrutar, te garantizamos que no te
+                  arrepentiras, recuerda que los dias Martes y Jueves en
+                  Hungry Mockingjay tenemos 2X1 en Postres.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <div>
+      <div id="contenedor">
           <div
             id="carouselExampleIndicators"
             class="carousel slide"
             data-bs-ride="carousel"
-            style="height: 100%"
+            style="height: 100%; margin-top: 50px"
           >
             <div class="carousel-indicators">
               <button
@@ -77,7 +119,7 @@
               </div>
               <div class="carousel-item">
                 <img
-                  src="assets/delivery-box.jpeg"
+                  src="assets/beer.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
@@ -119,315 +161,400 @@
             </button>
           </div>
         </div>
-        <div id="contenedormid"></div>
-        <div id="contenedor2">
-          <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-top: 10%">
-            <div class="col">
-              <div class="card">
-                <img src="assets/alitas.jpg" class="card-img-top" />
-                <div class="card-body">
-                  <h5 class="card-title">Platillos Principales</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="assets/Mojito.jpg" class="card-img-top" />
-                <div class="card-body">
-                  <h5 class="card-title">Bebidas</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="assets/chessecake.jpeg" class="card-img-top" />
-                <div class="card-body">
-                  <h5 class="card-title">Postres</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content.
-                  </p>
-                </div>
-              </div>
+    </div>
+    <div style="padding: 40px">
+      <center>
+        <h1 id="platillos" class="secciones">Platillos Principales</h1>
+      </center>
+    </div>
+    <div style="margin-left: 25px; margin-right: 25px;">
+      <div class="row row-cols-1 row-cols-md-3 g-5">
+        <div class="col">
+          <div class="card h-100" id="background">
+            <img src="assets/hot-dog.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">
+                HOT DOG CON PAPAS FRITAS DEL DISTRITO 4
+              </h5>
+              <p class="card-text">
+                Nuestro famoso Hot dog con papas con la unica y espectacular
+                presentacion de Hungry Mockingjay promete tener un sabor
+                delicioso del cual no te arrepentiras. <br />
+                Costo: $89.
+              </p>
             </div>
           </div>
         </div>
-      </section>
-      <center>
-        <h1 id="platillos" style="padding: 40px; color: white">
-          Platillos Principales
-        </h1>
-      </center>
-      <div>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card h-100" id="background">
-              <img src="assets/hot-dog.jpg" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-              </div>
+        <div class="col">
+          <div class="card h-100" id="background">
+            <img src="assets/pizza-con-queso.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">SINSAJO PIZZA DEL DISTRITO 7</h5>
+              <p class="card-text">
+                Nuestra atractiva y famosa pizza Sinsajo tiene el mejor sabor
+                con un tamaño GRANDE de 40cm y ingredientes de calidad de los
+                cuales no te arrepentiras de probar. <br />
+                Costo: $139.
+              </p>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100" id="background">
-              <img src="assets/pizza-con-queso.jpg" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a short card.</p>
-              </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" id="background">
+            <img src="assets/tacos.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">CARNITAS A LO DISTRITO 13</h5>
+              <p class="card-text">
+                Los mejores tacos de carnitas que probaras con finos cortes a
+                lo Distrito 13 con los que llevaras a tu boca el mejor gusto y
+                sabor a tu paladar. Orden de 3 tacos <br />
+                Costo: $95.
+              </p>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100" id="background">
-              <img src="assets/tacos.jpg" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content.
-                </p>
-              </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" id="background">
+            <img src="assets/two-tortillas-scaled.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">BURRITO DEL DISTRITO 2</h5>
+              <p class="card-text">
+                Nuestro famoso y enorme burito preparado con pollo, tocino,
+                queso con una presentacion espectacular por parte de la casa,
+                promete ser el burrito con el mejor sabor que hayas probado;
+                no probaras otro igual.<br />
+                Costo: $79.
+              </p>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100" id="background">
-              <img src="assets/two-tortillas-scaled.jpg" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-              </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" id="background">
+            <img src="assets/hamburguesa-papel-pintado-2560x1440_51.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">HAMBURGUESA DEL DISTRITO 9</h5>
+              <p class="card-text">
+                Nuestra hamburguesa del Distrito 9 es la mejor hamburguesa que
+                podras probar ya que es la unica que contiene un pan de ajo en
+                la tapa superior y pan integral en la inferior preparada con
+                Arrachera y un aderezo especial del Distrito 9 para darle su
+                gran y unico sabor.<br />
+                Costo: $115.
+              </p>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100" id="background">
-              <img
-                src="assets/hamburguesa-papel-pintado-2560x1440_51.jpg"
-                class="card-img-top"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100" id="background">
-              <img src="assets/alitas.jpg" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-              </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" id="background">
+            <img src="assets/alitas.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">ALITAS DEL DISTRITO 5</h5>
+              <p class="card-text">
+                Nuestras increibles Alitas del Distrito 5 de las que no te
+                podras arrepentir, con diferentes Aderezos de Coco, Fresa,
+                BBQ, Maracuya, Mango, Tamarindo o Habanero de las que no te
+                puedes ir sin probar. <br />Orden de 18 Alitas <br />
+                Costo: $170.
+              </p>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <div style="padding: 40px">
       <center>
-        <h1 id="Bebidas" style="padding: 40px; color: white">Bebidas</h1>
+        <h1 id="Bebidas" class="secciones">Bebidas</h1>
       </center>
-      <div>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="col">
-            <div class="card h-100" id="background">
-              <img src="assets/jarritos.jpg" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-              </div>
+    </div>
+    <div style="margin-left: 25px; margin-right: 25px;">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card h-100" id="background">
+            <img src="assets/jarritos.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Botella de Jarritos</h5>
+              <p class="card-text">
+                Una refrescante bebida traida desde el distrito 2, excelente
+                para que padres e hijos disfruten de sus alimentos.
+              </p>
+              <p>Costo: $22</p>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100" id="background">
-              <img src="assets/cocas.jpg" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a short card.</p>
-              </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" id="background">
+            <img src="assets/cocas.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Latas de Coca-Cola</h5>
+              <p class="card-text">
+                Una bebida infaltable para poder distrufar de cada comida, en
+                este caso con una presentación de lata de 330ml.
+              </p>
+              <p>Costo: $14</p>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100" id="background">
-              <img src="assets/Mojito.jpg" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content.
-                </p>
-              </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" id="background">
+            <img src="assets/Mojito.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Limonadas</h5>
+              <p class="card-text">
+                Una refrescante bebida no alcoholica hecha principalmente con
+                agua mineral en 3 presentaciones: limon, naranja y frambuesa.
+              </p>
+              <p>Costo: $34</p>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100" id="background">
-              <img src="assets/beer.jpg" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-              </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" id="background">
+            <img src="assets/beer.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Cerveza Mockingjay</h5>
+              <p class="card-text">
+                Extravagante bebida alcoholica no apta para niños, de las
+                mejores reservas del distrito 1 perfecta para acompañar
+                cualquier comida.
+              </p>
+              <p>Costo: $50</p>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <div style="padding: 40px">
       <center>
-        <h1 id="Postres" style="padding: 40px; color: white">Postres</h1>
+        <h1 id="Postres" class="secciones">Postres</h1>
       </center>
-      <div>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card h-100" id="background">
-              <img src="assets/helado.jpeg" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100" id="background">
-              <img src="assets/churros.jpeg" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a short card.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100" id="background">
-              <img src="assets/chessecake.jpeg" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100" id="background">
-              <img src="assets/buñuelos.jpg" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100" id="background">
-              <img src="assets/chococake.jpeg" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100" id="background">
-              <img src="assets/flan.jpeg" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-              </div>
+    </div>
+    <div style="margin-left: 25px; margin-right: 25px;">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100" id="background">
+            <img src="assets/helado.jpeg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">HELADO DEL DISTRITO 1</h5>
+              <p class="card-text">
+                El mejor helado de sabor napolitano que jamas hayas probado
+                con un rico chocolate proveniente del DISTRITO 1 con unico
+                sabor del cual no te puedes perder.<br />
+                Costo: $49.
+              </p>
             </div>
           </div>
         </div>
+        <div class="col">
+          <div class="card h-100" id="background">
+            <img src="assets/churros.jpeg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">CHURROS DEL DISTRITO 11</h5>
+              <p class="card-text">
+                Nuestros famosos churros con cajeta y rellenos de chocolate de
+                los cuales tu paladar no se arrepentira de probar. <br />Orden
+                de 10 pzs <br />
+                Costo: $69.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" id="background">
+            <img src="assets/chessecake.jpeg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">CHEESCAKE DEL DISTRITO 6</h5>
+              <p class="card-text">
+                Nuestro unico y especial cheescake del que no te puedes perder
+                con una presentacion especial por parte de Hungry Mockingjay.
+                <br />
+                Costo: $59.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" id="background">
+            <img src="assets/buñuelos.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">BUÑUELOS DE PANEM</h5>
+              <p class="card-text">
+                Nuestros exquisitos buñuelos con presentación de PANEM por
+                parte de Hungry Mockingjay de los cuales no te puedes perder
+                junto con la especialidad del chocolate Hungry Mockingjay
+                prometen darte el mejor sabor. <br />
+                Costo: $45.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" id="background">
+            <img src="assets/chococake.jpeg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">PASTEL DE CHOCOLATE DEL DISTRITO 3</h5>
+              <p class="card-text">
+                Nuestro pastel de chocolate del DISTRITO 3 con pase de nuez
+                del cual por ninguna razón te puedes perder.<br />
+                Costo: $50.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" id="background">
+            <img src="assets/flan.jpeg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">FLAN NAPOLITANO DISTRITO 8</h5>
+              <p class="card-text">
+                Nuestro flan napolitno del distrito 8 con una presentacion
+                espectaclar que te encantara junto a su inigualable sabor
+                debido a sus ingredientes de calidad por parte de Hungry
+                Mockingjay del que no te arrepentiras. <br />
+                Costo: $49.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="padding: 40px">
+        <center>
+          <h1 id="Promociones" class="secciones">Promociones</h1>
+        </center>
+      </div>
+      <div style="margin: 0px 25px 30px 25px">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100" id="background">
+            <img src="assets/hot-dog.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">MIERCOLES DEL DISTRITO 4</h5>
+              <p class="card-text">Por promocion de los Miercoles lleva contigo Dos HOTDOG con Papas al precio de 1 a partir de las 6:30pm.
+            <br> 2X1 EN HOTDOGS.<br> Costo: $89.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" id="background">
+            <img src="assets/Mojito.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">LUNES Y VIERNES DE PANEM</h5>
+              <p class="card-text"> Todos los Lunes y Viernes al consumir $300 pesos o más en nuestro restaurante te obsequiamos
+             1 Bebida gaseosa de tu preferencia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" id="background">
+            <img src="assets/pizza-con-queso.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">JUEVES DEL DISTRITO 7</h5>
+              <p class="card-text">
+                En la compra de Tres Pizzas o más te regalamos una orden de alitas del sabor de tu preferencia sin costo extra. 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" id="background">
+            <img src="assets/alitas.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">VIERNES DE ALITAS PANEM</h5>
+              <p class="card-text">
+                Todos los viernes del año a partir de las 8:00pm por cada Cuatro ordenes de Alitas te obsequiamos una Cerveza Mockingjay sin costo. 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" id="background">
+            <img src="assets/chessecake.jpeg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">FIN DE SEMANA DEL DISTRITO 11</h5>
+              <p class="card-text">
+                Todos los fines de semana (Sabados y Domingos) al consumir mas de $400 en comida de nuestro restaurante te regalamos un postre de tu preferenca sin costo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="padding: 40px">
+        <center>
+          <h1 id="Galeria" class="secciones">Galeria</h1>
+        </center>
+      </div>
+      <div style="margin-bottom: 5%;" id="slider">
+  
+        <ul class="slider">
+          <li id="slide1">
+            <img src="assets/eventor.jpg"/>
+          </li>
+          <li id="slide2">
+            <img src="assets/evento 2.jpg"/>
+          </li>
+          <li id="slide3">
+            <img src="assets/eventorr.jpg"/>
+          </li>
+        </ul>
+        
+        <ul class="menu">
+          <li>
+            <a href="#slide1"></a>
+          </li>
+          <li>
+            <a style="margin: 0px 20px 0px 20px" href="#slide2"></a>
+          </li>
+           <li>
+            <a href="#slide3"></a>
+          </li>
+        </ul>
+        
       </div>
 
-      <!--Pie de Pagina-->
-      <footer id="Pie_de_pagina">
-        <div id="Primersec">
-          <h1 style="color: white">Siguenos en:</h1>
+    <!--Pie de Pagina-->
+    <footer id="Pie_de_pagina">
+      <div id="Primersec">
+        <div style="display: flex; flex-direction: column; padding-right: 10%;">
+          <h1 style="color: beige">Siguenos en:</h1>
           <div id="iconos">
-            <a
-              id="icono"
-              href="https://www.facebook.com/ivonne.canomendoza"
-              style="font-size: 45px"
-              class="fab fa-facebook-square"
-              target="blank"
-            ></a>
-            <a
-              id="icono"
-              href="https://www.instagram.com/ufas_ktrufas/?hl=es"
-              style="font-size: 45px"
-              class="fab fa-instagram"
-              target="blank"
-            ></a>
+            <a id="icono" href="https://www.facebook.com/ivonne.canomendoza" style="font-size: 45px"
+              class="fab fa-facebook-square" target="blank"></a>
+            <a id="icono" href="https://www.instagram.com/ufas_ktrufas/?hl=es" style="font-size: 45px"
+              class="fab fa-instagram" target="blank"></a>
           </div>
         </div>
-        <div id="Segundasec">
-          <center>
-            <small style="color: white"
-              >&copy; 2021 <b>Cano Mendoza Ivonne</b> - Todos los Derechos
-              Reservados.</small
-            >
-          </center>
+        <div style="width: 300px;">
+          <h3 id="footer">CANO MENDOZA IVONNE</h3>
+          <h3 id="footer">GRUPO 1559</h3>
         </div>
-      </footer>
-    </main>
+        <div style="width: 300px;">
+          <h3 id="footer">PROGRAMACION WEB 1</h3>
+          <h3 id="footer">INGENIERÍA EN COMPUTACIÓN </h3>
+        </div>
+      </div>
+      <div id="Segundasec">
+        <center>
+          <b style="color: beige">&copy; 2021 <b>CANO MENDOZA IVONNE</b> - Todos los Derechos
+            Reservados.</small>
+        </center>
+      </div>
+    </footer>
+  </main>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>
