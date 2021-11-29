@@ -1,7 +1,7 @@
 a#enlaces {
   font-family: bold;
   font-size: 45px;
-  padding: 0px 100px 0px 0px;
+  padding: 0px 33px 0px 0px;
 }
 
 nav#navbar {
@@ -91,4 +91,151 @@ h1.secciones {
     rgb(235, 189, 65),
     rgb(231, 202, 75)
   );
+}
+
+/*PROMOCIONES*/
+/*TARJETAS SECCION DE PROMOCIONES*/
+
+.title {
+	text-align: center;
+	font-size: 40px;
+	color: #6a6a6a;
+	margin-top: 100px;
+	font-weight: 100;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.container-tarjetas {
+	width: 90%;
+
+
+	height: 630px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: auto;
+	align-items: center;
+}
+
+.container-tarjetas .card {
+	width: 330px;
+	height: 520px;
+	border-radius: 8px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	margin: 20px;
+	text-align: center;
+	transition: all 0.25s;
+}
+
+.container-tarjetas .card:hover {
+	transform: translateY(-15px);
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container-tarjetas .card img {
+	width: 330px;
+	height: 220px;
+}
+
+
+.container-tarjetas .card h4 {
+	font-weight: 600;
+}
+
+.container-tarjetas .card p {
+	padding: 0 1rem;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.container-tarjetas .card a {
+	font-weight: 500;
+	text-decoration: none;
+	color: #000000;
+}
+
+/*SLIDER*/
+body{
+  background-color: rgb(245, 174, 41);
+}
+
+#slider{
+font-family: sans-serif;
+margin: auto;
+background-color: rgb(245, 164, 59);
+max-width: 800px;
+width: 100%;
+padding: 30px;
+box-sizing: border-box;
+}
+
+#slider > ul, li {
+ padding: 0;
+ margin: 0;
+ list-style: none;
+}
+
+#slider > ul.slider{
+position: relative;
+max-width: 800px;
+width: 100%;
+height: 350px;
+}
+
+#slider > ul.slider h1{
+position: absolute;
+background-color: rgba(236, 154, 45, 0.6);
+padding: 10px;
+left: 50%;
+top: 100px;
+transform: translate(-50%, -50%);
+}
+
+#slider > ul.slider li {
+ position: absolute;
+ left: 0px;
+ top: 0px;
+ opacity: 0;
+ width: inherit;
+ height: inherit;
+ transition: opacity .5s;
+ background:rgb(245, 180, 58);
+}
+
+#slider > ul.slider li img{
+width: 100%;
+height: 360px;
+object-fit: cover;
+}
+
+#slider > ul.slider li:first-child {
+ opacity: 1; /*Mostramos el primer <li>*/
+}
+
+#slider > ul.slider li:target {
+ opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+#slider > .menu{
+text-align: center;
+margin: 15px;
+}
+
+#slider > .menu li{
+display: inline-block;
+text-align: center;
+}
+
+#slider > .menu li a{
+display: inline-block;
+color: white;
+text-decoration: none;
+background-color: grey;
+padding: 10px;
+width: 20px;
+height: 20px;
+font-size: 20px;
+border-radius: 100%;
 }
