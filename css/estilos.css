@@ -44,7 +44,7 @@ section#contenedor {
 main#contenedor {
   display: flex;
   flex-direction: column;
-  background-image: url("/fondo1.jpeg");
+  background-image: url("/fondo1.jpg");
 }
 
 div#contenedor {
