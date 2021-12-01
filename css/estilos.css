@@ -45,6 +45,7 @@ main#contenedor {
   display: flex;
   flex-direction: column;
   background-image: url("/fondo1.jpg");
+  background-repeat: repeat;
 }
 
 div#contenedor {
