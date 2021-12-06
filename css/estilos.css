@@ -51,6 +51,7 @@ section#contenedor {
 main#contenedor {
   display: flex;
   flex-direction: column;
+  background: url("/assets/diagonal-squares.png");
 }
 
 div#contenedor {
@@ -190,8 +191,3 @@ li {
   font-size: 20px;
   border-radius: 100%;
 }
-<<<<<<< HEAD
-/*------------------------------------------*/
-=======
-/*------------------------------------------*/
->>>>>>> 7ea211df150330949669213bf3a8ac9744863492
