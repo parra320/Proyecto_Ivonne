@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <!--AQUI ESTAN TODAS LAS RUTAS QUE SE LIGAN A LOS ESTILOS Y IMAGENES QUE LA PAGINA UTILIZA-->
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,11 +14,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="shortcut icon" href="assets/sinsajo1.png">
-
+<!--TITULO QUE TENDRA LA PAGINA-->
   <title>Hungry Mockingjay</title>
 </head>
 
 <body>
+  <!--ESTA SECCION ES LA QUE ESPECIFICA LA BARRA DE NAVEGACION EN LA PARTE SUPERIOR DE LA PANTALLA LA CUAL USAMOS PARA DESPLAZARNOS EN LA PAGINA-->
   <nav id="navbar" class="navbar navbar-expand-lg navbar-light sticky-top">
     <div class="container-fluid">
       <div id="navbar" class="navbar-nav">
@@ -30,10 +32,11 @@
       </div>
     </div>
   </nav>
-  <main style="background-image: url(/assets/fondo1.jpg);" id="contenedor">
+  <main style="background: url(/assets/fondo1.jpg);" id="contenedor">
     <section id="contenedor">
         <div class="row row-cols-1 row-cols-md-3 g-4" style="margin: 10px 30px 0px 30px">
           <div class="col">
+            <!---ESTA TARJETA ESPECIFICA LOS PLATILLOS PRINCIPALES QUE SE MANEJAN EN LA PAGINA-->
             <div class="card">
               <img src="assets/alitas.jpg" class="card-img-top" />
               <div id="background" class="card-body">
@@ -48,6 +51,7 @@
             </div>
           </div>
           <div class="col">
+            <!--ESTA TARJETA ESPECIFICA LLAS BEBIDAS QUE SE MANEJAN EN LA PAGINA-->
             <div class="card">
               <img src="assets/Mojito.jpg" class="card-img-top" />
               <div id="background" class="card-body">
@@ -62,6 +66,7 @@
             </div>
           </div>
           <div class="col">
+            <!--ESTA TARJETA ESPECIFICA LOS POSTRES QUE TIENE LA PAGINA-->
             <div class="card">
               <img src="assets/chessecake.jpeg" class="card-img-top" />
               <div id="background" class="card-body">
@@ -79,6 +84,7 @@
     </section>
     <div>
       <div id="contenedor">
+        <!--AQUI COMIENZA EL CARROUSEL DE LA PAGINA QUE ESPECIFICA LOS PAQUETES DEL RESTAURANTE -->
           <div
             id="carouselExampleIndicators"
             class="carousel slide"
@@ -113,6 +119,7 @@
                 aria-label="Slide 4"
               ></button>
             </div>
+            <!--AQUI SE INSERTAN LAS IMAGENES QUE OCUPARA EL CARROUSEL-->
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="assets/alitas.jpg" class="d-block w-100" />
@@ -145,6 +152,7 @@
                 class="carousel-control-prev-icon"
                 aria-hidden="true"
               ></span>
+              <!--PREVIOUS ES EL BOTON QUE OCUPA EL CARROUSELL PARA RETROCEDER-->
               <span class="visually-hidden">Previous</span>
             </button>
             <button
@@ -157,6 +165,7 @@
                 class="carousel-control-next-icon"
                 aria-hidden="true"
               ></span>
+              <!--NEXT ES EL BOTON QUE OCUPA EL CARROUSELL PARA AVANZAR-->
               <span class="visually-hidden">Next</span>
             </button>
           </div>
@@ -164,6 +173,7 @@
     </div>
     <div style="padding: 40px">
       <center>
+        <!--SE ESPECIFICA LA SECCION QUE SEPARA A PLATILLOS PRINCIPALES DE LAS DEMAS SECCIONES DE LA PAGINA-->
         <h1 id="platillos" class="secciones">Platillos Principales</h1>
       </center>
     </div>
@@ -172,6 +182,7 @@
         <div class="col">
           <div class="card h-100" id="background">
             <img src="assets/hot-dog.jpg" class="card-img-top" />
+            <!--AQUI SE ESPECIFICA LA TARJETA DE LOS HOTDOGS DEL DISTRITO 4-->
             <div class="card-body">
               <h5 class="card-title">
                 HOT DOG CON PAPAS FRITAS DEL DISTRITO 4
@@ -188,6 +199,7 @@
         <div class="col">
           <div class="card h-100" id="background">
             <img src="assets/pizza-con-queso.jpg" class="card-img-top" />
+            <!--AQUI SE ENCUENTRA LA TARJETA DE SINSAJO PIZZA-->
             <div class="card-body">
               <h5 class="card-title">SINSAJO PIZZA DEL DISTRITO 7</h5>
               <p class="card-text">
@@ -202,6 +214,7 @@
         <div class="col">
           <div class="card h-100" id="background">
             <img src="assets/tacos.jpg" class="card-img-top" />
+            <!--AQUI SE ENCUENTRA LA TARJETA DE TACOS DE CARNITAS-->
             <div class="card-body">
               <h5 class="card-title">CARNITAS A LO DISTRITO 13</h5>
               <p class="card-text">
@@ -216,6 +229,7 @@
         <div class="col">
           <div class="card h-100" id="background">
             <img src="assets/two-tortillas-scaled.jpg" class="card-img-top" />
+            <!--AQUI SE ENCUENTRA LA TARJETA DE LOS BURRITOS-->
             <div class="card-body">
               <h5 class="card-title">BURRITO DEL DISTRITO 2</h5>
               <p class="card-text">
@@ -231,6 +245,7 @@
         <div class="col">
           <div class="card h-100" id="background">
             <img src="assets/hamburguesa-papel-pintado-2560x1440_51.jpg" class="card-img-top" />
+            <!--AQUI SE ENCUENTRA LA TARJETA DE LA HAMBURGUESA-->
             <div class="card-body">
               <h5 class="card-title">HAMBURGUESA DEL DISTRITO 9</h5>
               <p class="card-text">
@@ -247,6 +262,7 @@
         <div class="col">
           <div class="card h-100" id="background">
             <img src="assets/alitas.jpg" class="card-img-top" />
+            <!--AQUI SE ENCUENTRA LA TARJETA DE LAS ALITAS-->
             <div class="card-body">
               <h5 class="card-title">ALITAS DEL DISTRITO 5</h5>
               <p class="card-text">
@@ -262,6 +278,7 @@
       </div>
     </div>
     <div style="padding: 40px">
+      <!--AQUI SE HACE MENCION DE LA SECCION BEBIDAS QUE SEPARA A ESTA SECCION DE LAS DEMÁS-->
       <center>
         <h1 id="Bebidas" class="secciones">Bebidas</h1>
       </center>
@@ -271,6 +288,7 @@
         <div class="col">
           <div class="card h-100" id="background">
             <img src="assets/jarritos.jpg" class="card-img-top" />
+            <!--TARJETA DE LA PRIMER BEBIDA-->
             <div class="card-body">
               <h5 class="card-title">Botella de Jarritos</h5>
               <p class="card-text">
@@ -284,6 +302,7 @@
         <div class="col">
           <div class="card h-100" id="background">
             <img src="assets/cocas.jpg" class="card-img-top" />
+            <!--TARJETA DE LA SEGUNDA BEBIDA-->
             <div class="card-body">
               <h5 class="card-title">Latas de Coca-Cola</h5>
               <p class="card-text">
@@ -297,6 +316,7 @@
         <div class="col">
           <div class="card h-100" id="background">
             <img src="assets/Mojito.jpg" class="card-img-top" />
+            <!--TARJETA DE LA TERCER BEBIDA-->
             <div class="card-body">
               <h5 class="card-title">Limonadas</h5>
               <p class="card-text">
@@ -310,6 +330,7 @@
         <div class="col">
           <div class="card h-100" id="background">
             <img src="assets/beer.jpg" class="card-img-top" />
+            <!--TARJETA DE LA CUARTA BEBIDA-->
             <div class="card-body">
               <h5 class="card-title">Cerveza Mockingjay</h5>
               <p class="card-text">
@@ -324,6 +345,7 @@
       </div>
     </div>
     <div style="padding: 40px">
+      <!--AQUI SE ESPECIFICA LA SECCION DE POSTRES DE EL RESTAURANTE-->
       <center>
         <h1 id="Postres" class="secciones">Postres</h1>
       </center>
@@ -333,6 +355,7 @@
         <div class="col">
           <div class="card h-100" id="background">
             <img src="assets/helado.jpeg" class="card-img-top" />
+            <!--TARJETA PRIMER POSTRE-->
             <div class="card-body">
               <h5 class="card-title">HELADO DEL DISTRITO 1</h5>
               <p class="card-text">
@@ -347,6 +370,7 @@
         <div class="col">
           <div class="card h-100" id="background">
             <img src="assets/churros.jpeg" class="card-img-top" />
+            <!--TARJETA SEGUNDO POSTRE-->
             <div class="card-body">
               <h5 class="card-title">CHURROS DEL DISTRITO 11</h5>
               <p class="card-text">
@@ -361,6 +385,7 @@
         <div class="col">
           <div class="card h-100" id="background">
             <img src="assets/chessecake.jpeg" class="card-img-top" />
+            <!--TARJETA TERCER POSTRE-->
             <div class="card-body">
               <h5 class="card-title">CHEESCAKE DEL DISTRITO 6</h5>
               <p class="card-text">
@@ -375,6 +400,7 @@
         <div class="col">
           <div class="card h-100" id="background">
             <img src="assets/buñuelos.jpg" class="card-img-top" />
+            <!--TARJETA CUARTO POSTRE-->
             <div class="card-body">
               <h5 class="card-title">BUÑUELOS DE PANEM</h5>
               <p class="card-text">
@@ -390,6 +416,7 @@
         <div class="col">
           <div class="card h-100" id="background">
             <img src="assets/chococake.jpeg" class="card-img-top" />
+            <!--TARJETA QUINTO POSTRE-->
             <div class="card-body">
               <h5 class="card-title">PASTEL DE CHOCOLATE DEL DISTRITO 3</h5>
               <p class="card-text">
@@ -403,6 +430,7 @@
         <div class="col">
           <div class="card h-100" id="background">
             <img src="assets/flan.jpeg" class="card-img-top" />
+            <!--TARJETA ULTIMO POSTRE-->
             <div class="card-body">
               <h5 class="card-title">FLAN NAPOLITANO DISTRITO 8</h5>
               <p class="card-text">
@@ -418,6 +446,7 @@
       </div>
     </div>
     <div style="padding: 40px">
+      <!--AQUI SE ENCUENTRA LA SECCION DE PROMOCIONES-->
         <center>
           <h1 id="Promociones" class="secciones">Promociones</h1>
         </center>
@@ -427,6 +456,7 @@
         <div class="col">
           <div class="card h-100" id="background">
             <img src="assets/hot-dog.jpg" class="card-img-top" />
+            <!--TARJETA CON PRIMERA PROMOCION DEL RESTAURANTE-->
             <div class="card-body">
               <h5 class="card-title">MIERCOLES DEL DISTRITO 4</h5>
               <p class="card-text">Por promocion de los Miercoles lleva contigo Dos HOTDOG con Papas al precio de 1 a partir de las 6:30pm.
@@ -438,6 +468,7 @@
         <div class="col">
           <div class="card h-100" id="background">
             <img src="assets/Mojito.jpg" class="card-img-top" />
+            <!--TARJETA CON SEGUNDA PROMOCION DEL RESTAURANTE-->
             <div class="card-body">
               <h5 class="card-title">LUNES Y VIERNES DE PANEM</h5>
               <p class="card-text"> Todos los Lunes y Viernes al consumir $300 pesos o más en nuestro restaurante te obsequiamos
@@ -448,6 +479,7 @@
         <div class="col">
           <div class="card h-100" id="background">
             <img src="assets/pizza-con-queso.jpg" class="card-img-top" />
+            <!--TARJETA CON TERCERA PROMOCION DEL RESTAURANTE-->
             <div class="card-body">
               <h5 class="card-title">JUEVES DEL DISTRITO 7</h5>
               <p class="card-text">
@@ -459,6 +491,7 @@
         <div class="col">
           <div class="card h-100" id="background">
             <img src="assets/alitas.jpg" class="card-img-top" />
+            <!--TARJETA CON CUARTA PROMOCION DEL RESTAURANTE-->
             <div class="card-body">
               <h5 class="card-title">VIERNES DE ALITAS PANEM</h5>
               <p class="card-text">
@@ -470,6 +503,7 @@
         <div class="col">
           <div class="card h-100" id="background">
             <img src="assets/chessecake.jpeg" class="card-img-top" />
+            <!--TARJETA CON QUINTA PROMOCION DEL RESTAURANTE-->
             <div class="card-body">
               <h5 class="card-title">FIN DE SEMANA DEL DISTRITO 11</h5>
               <p class="card-text">
@@ -481,20 +515,25 @@
       </div>
     </div>
     <div style="padding: 40px">
+      <!--AQUI SE ENCUENTRA LA SECCION DE GALERIA-->
         <center>
           <h1 id="Galeria" class="secciones">Galeria</h1>
         </center>
       </div>
+      <!--AQUI COMIENZA EL CARROUSEL QUE ESTA EN LA SECCION DE GALERIA-->
       <div style="margin-bottom: 5%;" id="slider">
   
         <ul class="slider">
           <li id="slide1">
+            <!--SE INSERTA LA PRIMERA IMAGEN DEL CARROUSELL-->
             <img src="assets/eventor.jpg"/>
           </li>
           <li id="slide2">
+            <!--SE INSERTA LA SEGUNDA IMAGEN DEL CARROUSELL-->
             <img src="assets/evento 2.jpg"/>
           </li>
           <li id="slide3">
+            }<!--SE INSERTA LA TERCERA IMAGEN DEL CARROUSELL-->
             <img src="assets/eventorr.jpg"/>
           </li>
         </ul>
@@ -510,10 +549,12 @@
             <a href="#slide3"></a>
           </li>
         </ul>
+        <!--FIN DEL CARROUSELL-->
         
       </div>
+      <!--FIN DE LA SECCION GALERIA-->
 
-    <!--Pie de Pagina-->
+    <!--COMIENZO DE PIE DE PAGINA-->
     <footer id="Pie_de_pagina">
       <div id="Primersec">
         <div style="display: flex; flex-direction: column; padding-right: 10%;">
@@ -526,16 +567,19 @@
           </div>
         </div>
         <div style="width: 300px;">
+          <!--DATOS DE LA AUTORA-->
           <h3 id="footer">CANO MENDOZA IVONNE</h3>
           <h3 id="footer">GRUPO 1559</h3>
         </div>
         <div style="width: 300px;">
+          <!--DATOS DE LA MATERIA-->
           <h3 id="footer">PROGRAMACION WEB 1</h3>
           <h3 id="footer">INGENIERÍA EN COMPUTACIÓN </h3>
         </div>
       </div>
       <div id="Segundasec">
         <center>
+          <!--DERECHOS DE AUTOR DE LA PAGINA WEB-->
           <b style="color: beige">&copy; 2021 <b>CANO MENDOZA IVONNE</b> - Todos los Derechos
             Reservados.</small>
         </center>
@@ -556,5 +600,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
 </body>
-
+<!--FFFFFFFFF-->
 </html>

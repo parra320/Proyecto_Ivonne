@@ -1,3 +1,5 @@
+/*Sección encargada de los enlaces y la barra de navegación*/
+
 a#enlaces {
   font-family: bold;
   font-size: 35px;
@@ -8,6 +10,20 @@ a#enlaces {
 a#enlaces:hover {
   color: rgb(77, 77, 77);
 }
+
+nav#navbar {
+  background: #ccc;
+  background: linear-gradient(
+    rgb(159, 36, 30),
+    rgb(187, 62, 34),
+    rgb(224, 154, 60),
+    rgb(235, 189, 65),
+    rgb(231, 202, 75)
+  );
+}
+/*------------------------------------------*/
+
+/*::::::::::::::Titulos de cada sección*/
 
 h1.secciones {
   width: 90%;
@@ -21,18 +37,9 @@ h1.secciones {
     rgb(231, 202, 75)
   );
 }
+/*------------------------------------------*/
 
-nav#navbar {
-  background: #ccc;
-  background: linear-gradient(
-    rgb(159, 36, 30),
-    rgb(187, 62, 34),
-    rgb(224, 154, 60),
-    rgb(235, 189, 65),
-    rgb(231, 202, 75)
-  );
-}
-
+/*:::::::::::contenedores*/
 section#contenedor {
   display: flex;
   flex-direction: row;
@@ -59,8 +66,9 @@ div#background {
     rgb(235, 189, 65)
   );
 }
+/*------------------------------------------*/
 
-/*:::::Pie de Pagina*/
+/*::::::::::::Pie de Pagina*/
 a#icono {
   padding: 0px 30px 0px 0px;
 }
@@ -95,8 +103,9 @@ div.col:hover {
   transform: translateY(-15px);
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.8);
 }
+/*------------------------------------------*/
 
-/*:::::Slider*/
+/*:::::::::::::::::Slider*/
 
 body {
   background-color: rgb(245, 174, 41);
@@ -181,3 +190,4 @@ li {
   font-size: 20px;
   border-radius: 100%;
 }
+/*------------------------------------------*/
