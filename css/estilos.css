@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /*Sección encargada de los enlaces y la barra de navegación*/
 
 a#enlaces {
@@ -51,7 +55,7 @@ section#contenedor {
 main#contenedor {
   display: flex;
   flex-direction: column;
-  background: url("/assets/diagonal-squares.png");
+  background: url("/assets/fondo1.jpg");
 }
 
 div#contenedor {
@@ -99,7 +103,9 @@ div#iconos {
 h3#footer {
   color: beige;
 }
+/*------------------------------------------*/
 
+/*:::::div que le da animación a las tarjetas*/
 div.col:hover {
   transform: translateY(-15px);
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.8);
